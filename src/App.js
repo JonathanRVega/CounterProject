@@ -2,17 +2,20 @@ import { Component } from "react";
 import Buttons from "./Buttons"
 
 class App extends Component {
-  state = {
+  constructor(props){
+    super (props);
+  this.state = {
     count: 0
   }
+}
 
-increment= (e) => {
+increment() {
     this.setState({
       count: this.state.count + 1
     });
   }
 
-  decrement = (e) => {
+  decrement() {
     this.setState({
       count: this.state.count - 1
     });
@@ -23,8 +26,8 @@ increment= (e) => {
   return (
     <div className="App">
     <h1>{this.state.count}</h1>
-    <button onClick={this.state.increment}>+</button>
-    <button onClick={this.state.decrement}>-</button>
+    <button onClick={() => this.increment()}>+</button>
+    <button onClick={() => this.decrement()}>-</button>
     </div>
   );
 }
