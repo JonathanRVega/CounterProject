@@ -45,19 +45,20 @@ class Buttons extends Component {
 
     render() {
         return (
-            <div className="container">
-                <h1 className="center red-text text-darken-4">{this.state.count}</h1>
+            <div className="container mainAlign">
+            <h2 className="center red-text text-darken-4">The current value of the state is:</h2>
+                <h1 className="center red-text text-darken-4 margin">{this.state.count}</h1>
                 <div className="center">
                   <button className="btn-floating btn-large waves-effect waves-light red margin" onClick={() => this.increment()}>+</button>
                   <button className="btn-floating btn-large waves-effect waves-light red margin" onClick={() => this.decrement()}>-</button>
                 </div>
                 <div className="center">
                   <form>
-                    <input className="form" type='number' step="1"
+                    <input type='number' step="1"
                     onChange={this.handleChange} />
+                    </form>
                     <button className="waves-effect waves-light btn red margin" onClick={this.handleAdd} type='submit'>Add!</button>
                     <button className="waves-effect waves-light btn red margin" onClick={this.handleSubstract} type='submit'>Substract!</button>
-                  </form>
                 </div>
             </div>
         )

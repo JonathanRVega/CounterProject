@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: turquoise;
 }
 
 code {
@@ -15,8 +16,19 @@ code {
 .margin{
   margin-right: 5px;
   margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.form{
-  width: 50%;
+ form{
+  padding: 0 40%;
+  text-align: center;
+}
+
+.mainAlign{
+  margin-top: 15%;
+  margin-bottom: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 40%;
+  background: white;
 }
